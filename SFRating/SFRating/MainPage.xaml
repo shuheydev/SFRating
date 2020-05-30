@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SFRating.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
+    mc:Ignorable="d">
+
+    <StackLayout>
+        <!--  Place new controls here  -->
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to Xamarin.Forms!"
+            TextColor="Gold"
+            VerticalOptions="CenterAndExpand" />
+        <rating:SfRating
+            x:Name="rating"
+            BackgroundColor="Blue"
+            ItemCount="6"
+            ItemSize="60"
+            Precision="Exact"
+            TooltipPlacement="BottomRight"
+            TooltipPrecision="4"
+            Value="3.5">
+            <rating:SfRating.RatingSettings>
+                <rating:SfRatingSettings
+                    RatedFill="Gold"
+                    RatedStroke="Red"
+                    RatedStrokeWidth="10"
+                    UnRatedFill="LightBlue"
+                    UnRatedStroke="Green"
+                    UnRatedStrokeWidth="5" />
+            </rating:SfRating.RatingSettings>
+        </rating:SfRating>
+    </StackLayout>
+
+</ContentPage>
